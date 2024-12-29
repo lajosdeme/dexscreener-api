@@ -81,3 +81,9 @@ type Social struct {
 type Boosts struct {
 	Active int `json:"active"`
 }
+
+type OrderPaidResponse struct {
+	Type             string `json:"type"`
+	Status           string `json:"status"`
+	PaymentTimestamp int    `json:"paymentTimestamp"`
+}
